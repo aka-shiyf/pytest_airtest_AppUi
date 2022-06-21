@@ -1,0 +1,1 @@
+[{"uid":"b853eae21f426c80","name":"HR小程序测试demo","time":{"start":1655810449266,"stop":1655810455763,"duration":6497},"status":"passed","severity":"critical"},{"uid":"b6f4e10a3db46e5","name":"HR小程序测试demo","time":{"start":1655810455769,"stop":1655810470953,"duration":15184},"status":"broken","severity":"critical"}]

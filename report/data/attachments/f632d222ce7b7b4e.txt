@@ -1,0 +1,3 @@
+DEBUG    airtest.core.android.adb:adb.py:147 C:\Users\syf\PycharmProjects\flashsign_HR\venv\Lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s SKS6R20602036010 shell input keyevent BACK
+DEBUG    airtest.core.android.adb:adb.py:147 C:\Users\syf\PycharmProjects\flashsign_HR\venv\Lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s SKS6R20602036010 shell input keyevent BACK
+DEBUG    airtest.core.android.adb:adb.py:147 C:\Users\syf\PycharmProjects\flashsign_HR\venv\Lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -s SKS6R20602036010 shell input keyevent BACK

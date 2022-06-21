@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 21 19:20:49 CST 2022","Tue Jun 21 19:20:55 CST 2022","6497","test_cases","test_address_list","TestHome","","","HR小程序测试demo","测试"
+"broken","Tue Jun 21 19:20:55 CST 2022","Tue Jun 21 19:21:10 CST 2022","15184","test_cases","test_address_list","TestHome","","","HR小程序测试demo","测试"

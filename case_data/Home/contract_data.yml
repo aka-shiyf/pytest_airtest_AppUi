@@ -1,0 +1,62 @@
+# operational等于0时back返回；
+# operational等于1时home返回；
+# operational等于2时输入文本，enter为待输入文本；
+# operational等于3时为点击操作，text为需要点击的文本，jd_path为ui绝对路径。
+# operational等于4时为左右滑动操作，abscissax0为屏幕左侧坐标，abscissax1为屏幕右侧坐标，例：从左向右 abscissax0=0.3，abscissax1=0.8。
+# operational等于5时上下滑动操作，Y_axis0<Y_axis1时为从下往上划，反之相反。
+- text:
+    -
+        CaseDescription1: 一集菜单
+        CaseDescription2: 二级菜单
+        CaseDescription3: 这是测试用例的完整描述
+        operational: 3
+        text: 审核
+        jd_path:
+    -
+        operational: 3
+        text: 我的
+        jd_path:
+    -
+        operational: 3
+        text: 充值中心
+        jd_path:
+
+- text:
+    -
+        CaseDescription1: 一集菜单
+        CaseDescription2: 二级菜单
+        CaseDescription3: 这是第二条用例
+        operational: 0
+
+    -
+        operational: 3
+        text: 档案夹
+        jd_path:
+
+    -
+        operational: 3
+        text: 签署完成
+        jd_path:
+
+    -
+        operational: 5
+        Y_axis0: 0.3
+        Y_axis1: 0.7
+    -
+        operational: 5
+        Y_axis0: 0.3
+        Y_axis1: 0.7
+    -
+        operational: 0
+    -
+        operational: 0
+    -
+        operational: 5
+#    -
+#        operational: 4
+#        abscissax0: 0.3
+#        abscissax1: 0.8
+#    -
+#        operational: 5
+#        Y_axis0: 0.3
+#        Y_axis1: 0.8
