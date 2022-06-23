@@ -1,11 +1,15 @@
 import os
+import time
 
 import allure
 import pytest
 
+import common.Screenshots_operation
 from common.Unpack import unpack
 from common.operate import Operate_More
 from common.yaml_util import YamlUtil
+
+from common.Screenshots_operation import Screenshots
 
 TestCaseData = YamlUtil().read_extract_yaml(os.getcwd() + "/case_data/Home/contract_data.yml")
 
@@ -21,8 +25,13 @@ class TestHome:
     # @allure.link()  # 定义一个链接在测试报告展现
     # @allure.step()  # 操作步骤
     # @allure.attachment()  # 附件
-    @allure.title("HR小程序测试demo")  # 测试用例标题
+    @allure.title("测试用例标题")  # 测试用例标题
     @pytest.mark.parametrize('args', TestCaseData)
     def test_home_list(self, args):
-        "测试"
-        Operate_More().implement(text0=args["text"])
+        try:
+            Operate_More().implement(text0=args["text"])
+            Screenshots().execute_screenshot()
+        except BaseException as e:
+            print(type(e))
+        # with allure.step("测试用例描述"):
+        #     allure.attach(args["text"][0]["CaseDescription3"], "用例描述文件", allure.attachment_type.TEXT)

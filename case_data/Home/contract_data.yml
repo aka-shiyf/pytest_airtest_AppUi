@@ -8,7 +8,7 @@
     -
         CaseDescription1: 一集菜单
         CaseDescription2: 二级菜单
-        CaseDescription3: 这是测试用例的完整描述
+        CaseDescription3: 测试
         operational: 3
         text: 审核
         jd_path:
@@ -20,6 +20,12 @@
         operational: 3
         text: 充值中心
         jd_path:
+
+    -
+        operational: 8
+        Title: 本条测试用例标题
+        CaseDescription3: 石大大ssssss
+        file_type: allure.attachment_type.TEXT
 
 - text:
     -
@@ -39,24 +45,24 @@
         jd_path:
 
     -
-        operational: 5
-        Y_axis0: 0.3
-        Y_axis1: 0.7
+        operational: 7
+        text: 我的
+        jd_path:
+
     -
         operational: 5
-        Y_axis0: 0.3
-        Y_axis1: 0.7
+        Y_axis0: 0.2
+        Y_axis1: 0.8
+    -
+        operational: 5
+        Y_axis0: 0.2
+        Y_axis1: 0.8
+
     -
         operational: 0
     -
         operational: 0
     -
-        operational: 5
-#    -
-#        operational: 4
-#        abscissax0: 0.3
-#        abscissax1: 0.8
-#    -
-#        operational: 5
-#        Y_axis0: 0.3
-#        Y_axis1: 0.8
+        operational: 0
+    -
+        operational: 6

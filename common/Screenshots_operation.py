@@ -1,8 +1,9 @@
 import os
 import time
 
-path_phone = "sdcard/" + str(time.strftime("%Y%m%d%H%M%S")) + ".png"
-path_pc = 'E:\调试截图'
+File_Name = str(time.strftime("%Y%m%d%H%M%S")) + ".png"
+path_phone = "sdcard/testimg/" + File_Name
+path_pc = 'C:\\Users\\syf\\PycharmProjects\\flashsign_HR\\TestScreenshots'
 
 
 class Screenshots:
@@ -28,6 +29,10 @@ class Screenshots:
         """
         :return: 返回图片路径，在电脑上的
         """
-        path_image = path_pc + path_phone
+        path_image = path_pc + "\\" + File_Name
         return path_image
 
+    def flie_jt(self):
+        with open(Screenshots().path_lj(), mode="rb") as f:
+            file = f.read()
+        return file
