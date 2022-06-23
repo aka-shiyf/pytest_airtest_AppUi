@@ -37,10 +37,11 @@ class Operate_More:
     # 返回首页事件
     def home_syf(self):
         keyevent("HOME")
-
+    # 用例描述操作
     def cace_describe(self, Title, CaseDescription3, file_type):
         with allure.step(Title):
             allure.attach(CaseDescription3, file_type)
+    # 归一化坐标定位点击方法
 
     # 运行主方法
     def implement(self, text0):
@@ -63,12 +64,20 @@ class Operate_More:
             # 上下滑动操作，operational为5时执行，Y_axis0>Y_axis1时从上往下滑动，例：(0.8,0.2),反之相反。
             elif texts["operational"] == 5:
                 Operate_More().swipe_UL(texts["Y_axis0"], texts["Y_axis1"])
+            # 截图操作，operational为6时执行截图操作，截图后会生成在当前用例测试报告中。
             elif texts["operational"] == 6:
                 Screenshots().execute_screenshot()
                 with allure.step("截图"):
                     allure.attach(Screenshots().flie_jt(), "截图", allure.attachment_type.PNG)
+            # 断言操作，operational为7时断言，必传参数param、text，参数可为空。
             elif texts["operational"] == 7:
                 AssertOperate().assert_exists_syf(param=texts["jd_path"], text0=texts["text"])
+            # 用例或步骤描述操作，operational为8时执行。必传参数Title（标题）、CaseDescription3（描述）、file_type（文件类型）
             elif texts["operational"] == 8:
                 Operate_More().cace_describe(Title=texts["Title"], CaseDescription3=texts["CaseDescription3"],
                                              file_type=texts["file_type"])
+            elif texts["operational"] == 9:
+                poco.click(texts["coordinate"])
+
+            elif texts["operational"] == 10:
+                sleep(texts["sleep"])

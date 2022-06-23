@@ -1,0 +1,122 @@
+# operational等于0时back返回；
+# operational等于1时home返回；
+# operational等于2时输入文本，enter为待输入文本；
+# operational等于3时为点击操作，text为需要点击的文本，jd_path为ui绝对路径。
+# operational等于4时为左右滑动操作，abscissax0为屏幕左侧坐标，abscissax1为屏幕右侧坐标，例：从左向右 abscissax0=0.3，abscissax1=0.8。
+# operational等于5时上下滑动操作，Y_axis0<Y_axis1时为从下往上划，反之相反。
+- text:
+    -
+        CaseDescription1: 一集菜单
+        CaseDescription2: 二级菜单
+        CaseDescription3: 测试
+        operational: 3
+        text: 在职相关
+        jd_path:
+
+    -
+        operational: 3
+        text: 不动产赠与合同（企业与个人）
+        jd_path:
+
+    -
+        operational: 3
+        text: 立即发起
+        jd_path:
+
+    -
+        operational: 9
+        coordinate:
+            -   0.6314814814814815
+            -   0.17
+
+    -
+        operational: 2
+        enter: "17702723837"
+
+    -
+        operational: 9
+        coordinate:
+            -   0.6314814814814815
+            -   0.23125
+
+    -
+        operational: 2
+        enter: 测试企业new
+
+    -
+        operational: 9
+        coordinate:
+            -   0.6314814814814815
+            -   0.33875
+
+    -
+        operational: 2
+        enter: "1"
+
+    -
+        operational: 9
+        coordinate:
+            -   0.6314814814814815
+            -   0.4
+
+    -
+        operational: 2
+        enter: 张三
+
+    -
+        operational: 9
+        coordinate:
+            -   0.6314814814814815
+            -   0.46125
+
+    -
+        operational: 2
+        enter: "17702723837"
+
+    -
+        operational: 3
+        text: 发起合同
+        jd_path:
+
+    -
+        operational: 10
+        sleep: 3
+
+    -
+        operational: 3
+        text: 发送签署
+        jd_path:
+
+    -
+        operational: 3
+        text: 添加审核人
+        jd_path:
+
+    -
+        operational: 9
+        coordinate:
+            -   0.8583333333333333
+            -   0.6654166666666667
+
+    -
+        operational: 3
+        text: 下一步
+        jd_path:
+
+    -
+        operational: 9
+        coordinate:
+            -   0.8703703703703703
+            -   0.20541666666666666
+
+    -
+        operational: 3
+        text: 支付发送
+        jd_path:
+
+    -
+        operational: 3
+        text: 确定
+        jd_path:
+
+    -   operational: 6

@@ -10,10 +10,13 @@
     3.conftest.py可以有多个，也可以有多个不同层级
 """
 import pytest
+from airtest.core.api import stop_app
 
 from start_alipay import start
 
 
-@pytest.fixture(scope="session",autouse=True)
+@pytest.fixture(scope="class",autouse=True)
 def login_alipay():
     start()
+    yield
+    stop_app("com.eg.android.AlipayGphone")

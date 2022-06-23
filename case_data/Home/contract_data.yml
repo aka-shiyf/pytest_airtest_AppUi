@@ -58,11 +58,4 @@
         Y_axis0: 0.2
         Y_axis1: 0.8
 
-    -
-        operational: 0
-    -
-        operational: 0
-    -
-        operational: 0
-    -
-        operational: 6
+    -   operational: 6

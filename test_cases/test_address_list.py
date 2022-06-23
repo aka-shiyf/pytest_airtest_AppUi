@@ -33,5 +33,3 @@ class TestHome:
             Screenshots().execute_screenshot()
         except BaseException as e:
             print(type(e))
-        # with allure.step("测试用例描述"):
-        #     allure.attach(args["text"][0]["CaseDescription3"], "用例描述文件", allure.attachment_type.TEXT)

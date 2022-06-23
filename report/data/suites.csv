@@ -1,3 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Jun 23 10:53:38 CST 2022","Thu Jun 23 10:54:01 CST 2022","22733","test_cases","test_address_list","TestHome","","","测试用例标题",""
-"passed","Thu Jun 23 10:53:31 CST 2022","Thu Jun 23 10:53:38 CST 2022","7873","test_cases","test_address_list","TestHome","","","测试用例标题",""
+"passed","Thu Jun 23 17:54:58 CST 2022","Thu Jun 23 17:55:06 CST 2022","7900","test_cases","test_address_list","TestHome","","","测试用例标题",""
+"passed","Thu Jun 23 17:55:30 CST 2022","Thu Jun 23 17:56:07 CST 2022","36611","test_cases","test_normal_initiation_contract","TestContract","","","测试用例标题",""
+"passed","Thu Jun 23 17:55:06 CST 2022","Thu Jun 23 17:55:22 CST 2022","16677","test_cases","test_address_list","TestHome","","","测试用例标题",""
+"passed","Thu Jun 23 16:50:59 CST 2022","Thu Jun 23 16:51:15 CST 2022","15522","test_cases","test_normal_initiation_contract","TestContract","","","测试用例标题",""
