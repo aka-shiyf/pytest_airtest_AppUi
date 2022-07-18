@@ -1,0 +1,121 @@
+- text:
+    -
+        CaseDescription1: 单据小程序发起单据
+        CaseDescription2: 发起收款收据
+        CaseDescription3: 正例：正常发起一份收款收据
+        operational: 8
+        Title: 查看单据测试用例
+        file_type: allure.attachment_type.TEXT
+
+    -
+        operational: 3
+        text:
+            - 切换企业主体
+            - 石越峰test
+        jd_path:
+        coordinate:
+
+    -
+        operational: 3
+        text:
+            - 收款收据
+            - 电子收据
+            - 立即开具电子收据
+        jd_path:
+        coordinate:
+
+    -
+        operational: 2
+        text:
+            - 请输入收款人姓名
+            - 请输入经办人姓名
+        jd_path:
+        coordinate:
+        enter:
+            - 石越峰
+            - 石越峰
+
+    -
+        operational: 3
+        text:
+            - 请输入收款时间
+            - 确定
+            - 请输入付款方手机号
+            - "1"
+            - "7"
+            - "7"
+            - "0"
+            - "2"
+            - "7"
+            - "2"
+            - "3"
+            - "8"
+            - "3"
+            - "7"
+        jd_path:
+        coordinate:
+
+
+    -
+        operational: 2
+        text:
+            - 请输入付款方式
+            - 请输入备注信息
+            - 请输入付款人姓名
+        jd_path:
+        coordinate:
+        enter:
+            - 支付宝
+            - 无
+            - 石越峰
+
+
+    -
+        operational: 2
+        text: 请输入品名及规格
+        jd_path:
+        coordinate:
+        enter: "规格1"
+
+    -
+        operational: 5
+        Y_axis0: 0.2
+        Y_axis1: 0.5
+
+    -
+        operational: 2
+        text: 请输入金额
+        jd_path:
+        coordinate:
+        enter: "10"
+
+    -
+        operational: 3
+        text: 下一步
+        jd_path:
+        coordinate:
+
+    -
+        operational: 12
+        WaitTime: 10
+        assert_txt:
+        text:
+        jd_path: pdfWrap
+
+    -
+        operational: 3
+        text:
+            - 确定开具
+            - 非ca数字证书套餐
+            - 支付发送
+            - 确定
+        jd_path:
+        coordinate:
+
+    -
+        operational: 12
+        WaitTime: 10
+        assert_txt: "断言单据开具成功"
+        text: 开具单据成功
+        jd_path:
+

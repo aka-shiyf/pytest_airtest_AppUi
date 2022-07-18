@@ -1,0 +1,53 @@
+- text:
+    -
+        CaseDescription1: 单据小程序登录
+        CaseDescription2: 登录
+        CaseDescription3: 登录
+        operational: 3
+        text: 我的
+        jd_path:
+        coordinate:
+
+    -
+        operational: 3
+        text:
+        jd_path:
+        coordinate:
+            -   0.9037
+            -   0.1722
+
+
+    -
+        operational: 3
+        text: 关于闪链签
+        jd_path:
+        coordinate:
+
+    -
+        operational: 11
+        coordinate:
+            -   0.5
+            -   0.368
+        duration: 1.2
+        text:
+        jd_path:
+
+    -
+        operational: 3
+        text: 确定
+        jd_path:
+        coordinate:
+
+    -
+        operational: 3
+        text: 我已阅读并同意
+        jd_path:
+        coordinate:
+
+    -
+        operational: 3
+        text:
+        jd_path: android.widget.Button
+        coordinate:
+
+
