@@ -1,5 +1,7 @@
 # -*- encoding=utf8 -*-
+import logging
 import os
+import time
 
 from airtest.core.api import text
 from poco.proxy import UIObjectProxy
@@ -19,5 +21,7 @@ from common.Assert import AssertOperate
 # print(1)
 # assert poco(text="") in b
 # Operate_More().swipe_LR(0.8, 0.2)
-poco.click([0.6314814814814815, 0.17])
-text("18812345678")
+# poco.click([0.6314814814814815, 0.17])
+# text("18812345678")
+
+

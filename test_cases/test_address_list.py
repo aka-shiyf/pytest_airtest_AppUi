@@ -33,3 +33,4 @@ class TestHome:
             Screenshots().execute_screenshot()
         except BaseException as e:
             print(type(e))
+            print(e)

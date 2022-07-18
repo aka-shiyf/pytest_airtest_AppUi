@@ -2,7 +2,7 @@ import os
 import time
 
 File_Name = str(time.strftime("%Y%m%d%H%M%S")) + ".png"
-path_phone = "sdcard/testimg/" + File_Name
+path_phone = "storage/emulated/0/DCIM/Screenshots/" + File_Name
 path_pc = 'C:\\Users\\syf\\PycharmProjects\\flashsign_HR\\TestScreenshots'
 
 
@@ -11,6 +11,8 @@ class Screenshots:
     def crop_image(self, path_jt):
         """截图到手机"""
         os.system('adb shell screencap -p {}'.format(path_jt))
+    def remove_image(self):
+        os.system('adb shell rm {}'.format(path_phone))
 
     def move_image(self, path_yd, path_jt):
         """
@@ -22,8 +24,13 @@ class Screenshots:
         os.system('adb pull {} {}'.format(path_jt, path_yd))
 
     def execute_screenshot(self):
-        Screenshots().crop_image(path_jt=path_phone)
-        Screenshots().move_image(path_jt=path_phone, path_yd=path_pc)
+        self.crop_image(path_jt=path_phone)
+        print("{}截图已保存到手机".format(File_Name))
+        self.move_image(path_jt=path_phone, path_yd=path_pc)
+        print("截图已移动到pc目录{}".format(path_pc))
+        self.remove_image()
+        print("手机图片{}已删除".format(File_Name))
+
 
     def path_lj(self):
         """

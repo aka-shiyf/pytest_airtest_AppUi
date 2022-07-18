@@ -11,6 +11,7 @@ from common.Screenshots_operation import Screenshots
 
 TestCaseData = YamlUtil().read_extract_yaml(os.getcwd() + "/case_data/AContract/contract_case.yml")
 
+
 @allure.feature((unpack(TestCaseData))[0])  # 一级菜单
 class TestContract:
     # @allure.epic()  # 最顶级描述
@@ -30,3 +31,4 @@ class TestContract:
             Screenshots().execute_screenshot()
         except BaseException as e:
             print(type(e))
+            print(e)
