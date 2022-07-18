@@ -1,0 +1,56 @@
+- text:
+    -
+        CaseDescription1: 单据小程序查看单据
+        CaseDescription2: 查看单据
+        CaseDescription3: 正例：查看单据
+        operational: 8
+        Title: 查阅文件按钮查看单据测试用例
+        file_type: allure.attachment_type.TEXT
+
+    -
+        operational: 3
+        text:
+            - 单据
+            - 石越峰test
+            - 电子收据
+        jd_path:
+        coordinate:
+
+    -
+        operational: 3
+        text:
+        jd_path:
+        coordinate:
+            - 0.75
+            - 0.95
+
+    -
+        operational: 12
+        WaitTime: 20
+        assert_txt: 断言查阅文件按钮查看PDF成功
+        text:
+        jd_path: appx-native-component-1
+
+    -
+        CaseDescription3: 正例：查看单据，点击PDF图标查看
+        operational: 8
+        Title: PDF图标查看单据测试用例
+        file_type: allure.attachment_type.TEXT
+
+    -
+        operational: 0
+
+    -
+        operational: 3
+        text: 
+        jd_path:
+        coordinate:
+
+    -
+        operational: 12
+        WaitTime: 20
+        assert_txt: 断言PDF图标查看PDF成功
+        text:
+        jd_path: appx-native-component-1
+
+
